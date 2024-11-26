@@ -7,6 +7,7 @@ using UnityEngine;
  */
 public class TimedSpawnerRandom: MonoBehaviour {
     [SerializeField] Mover prefabToSpawn;
+    [SerializeField] BossMover prefabBoss;
     [SerializeField] Vector3 velocityOfSpawnedObject;
     [Tooltip("Minimum time between consecutive spawns, in seconds")] [SerializeField] float minTimeBetweenSpawns = 0.2f;
     [Tooltip("Maximum time between consecutive spawns, in seconds")] [SerializeField] float maxTimeBetweenSpawns = 1.0f;
@@ -14,7 +15,14 @@ public class TimedSpawnerRandom: MonoBehaviour {
     [SerializeField] Transform parentOfAllInstances;
 
     void Start() {
-         SpawnRoutine();
+        if (prefabToSpawn != null)
+        {
+            SpawnRoutine();
+        }
+        if (prefabBoss != null)
+        {
+            BossSpawnRoutine();
+        }
     }
 
     async void SpawnRoutine() {
@@ -30,5 +38,24 @@ public class TimedSpawnerRandom: MonoBehaviour {
             newObject.GetComponent<Mover>().SetVelocity(velocityOfSpawnedObject);
             newObject.transform.parent = parentOfAllInstances;
         }
+    }
+
+    private void BossSpawnRoutine()
+    {
+        // Wait for a random amount of time before spawning the boss
+        float timeBetweenSpawnsInSeconds = 1f;
+        // Check if this object is still valid (not destroyed)
+        if (!this) return;
+
+        // Calculate the position for spawning the boss
+        Vector3 positionOfSpawnedObject = new Vector3(
+            transform.position.x + Random.Range(-maxXDistance, +maxXDistance),
+            transform.position.y,
+            transform.position.z);
+
+        // Instantiate the boss object
+        GameObject newObject = Instantiate(prefabBoss.gameObject, positionOfSpawnedObject, Quaternion.identity);
+
+
     }
 }
