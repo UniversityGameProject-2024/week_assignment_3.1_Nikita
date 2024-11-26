@@ -42,8 +42,6 @@ public class TimedSpawnerRandom: MonoBehaviour {
 
     private void BossSpawnRoutine()
     {
-        // Wait for a random amount of time before spawning the boss
-        float timeBetweenSpawnsInSeconds = 1f;
         // Check if this object is still valid (not destroyed)
         if (!this) return;
 
@@ -55,7 +53,5 @@ public class TimedSpawnerRandom: MonoBehaviour {
 
         // Instantiate the boss object
         GameObject newObject = Instantiate(prefabBoss.gameObject, positionOfSpawnedObject, Quaternion.identity);
-
-
     }
 }
