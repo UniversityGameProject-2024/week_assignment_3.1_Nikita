@@ -1,42 +1,25 @@
-# Unity week 2: Formal elements
+<div dir='rtl' lang='he'>
 
-A project with step-by-step scenes illustrating some of the formal elements of game development in Unity, including: 
+# מטלה 3 
+## חלק א: שינוי ושיפור
+* בחלק א בחרתי לעשות שינוי בסעיף 2 (לשים ניקוד של השחקן במקום קבוע)
+* השינוי המקורי שהוספתי הוא ברמה 2 ושם הוספתי אויב מסוג בוס שנוצר פעם אחד והוא לא מושפע מכוח הכבידה אבל הוא זז ימין שמאלה בגבולות של המסך והשחקן צריך לפגוע בו
 
-* Prefabs for instantiating new objects;
-* Colliders for triggering outcomes of actions;
-* Coroutines for setting time-based rules.
 
-Text explanations are available 
-[here](https://github.com/gamedev-at-ariel/gamedev-5782) in folder 04.
+קישור למשחק:
+https://wnikita.itch.io/week-assignment-3-fruitninja
 
-## Cloning
-To clone the project, you may need to install git lfs first (if it is not already installed):
 
-    git lfs install 
+<img src="https://i.ibb.co/68RR3cH/spaceship-1.png" width="300" height="200">
 
-To clone faster, you can limit the depth to 1 like this:
 
-    git clone --depth=1 https://github.com/<repository-name>.git
-
-When you first open this project, you may not see the text in the score field.
-This is because `TextMeshPro` is not in the project.
-The Unity Editor should hopefully prompt you to import TextMeshPro;
-once you do this, re-open the scenes, and you should be able to see the texts.
+<img src="https://i.ibb.co/wNjVjBY/spaceship-2.png" width="300" height="200">
 
 
 
-## Credits
+---
+מגישים:
 
-Programming:
-* Maoz Grossman
-* Erel Segal-Halevi
+ניקיטה אנוסוב 
 
-Online courses:
-* [The Ultimate Guide to Game Development with Unity 2019](https://www.udemy.com/the-ultimate-guide-to-game-development-with-unity/), by Jonathan Weinberger
 
-Graphics:
-* [Matt Whitehead](https://ccsearch.creativecommons.org/photos/7fd4a37b-8d1a-4d4c-80a2-4ca4a3839941)
-* [Kenney's space kit](https://kenney.nl/assets/space-kit)
-* [Ductman's 2D Animated Spacehips](https://assetstore.unity.com/packages/2d/characters/2d-animated-spaceships-96852)
-* [Franc from the Noun Project](https://commons.wikimedia.org/w/index.php?curid=64661575)
-* [Greek-arrow-animated.gif by Andrikkos is licensed under CC BY-SA 3.0](https://search.creativecommons.org/photos/2db102af-80d0-4ec8-9171-1ac77d2565ce)
