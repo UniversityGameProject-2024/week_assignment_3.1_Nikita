@@ -7,18 +7,22 @@
 
 
 קישור למשחק:
-(https://wnikita.itch.io/week-assignment-3-fruitninja](https://wnikita.itch.io/spaceships)
 
 
 
+(https://wnikita.itch.io/week-assignment-3-fruitninja)
+
+---
+
+<img src="https://i.ibb.co/68RR3cH/spaceship-1.png" width="300" height="200">
 
 
+<img src="https://i.ibb.co/wNjVjBY/spaceship-2.png" width="300" height="200">
 
 
 
 ---
-מגיש:
+מגישים:
 
-יעקב אלקובי
-
+ניקיטה אנוסוב 
 
