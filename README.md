@@ -9,8 +9,7 @@
 קישור למשחק:
 
 
-
-(https://wnikita.itch.io/week-assignment-3-fruitninja)
+https://wnikita.itch.io/week-assignment-3-spaceship
 
 ---
 
